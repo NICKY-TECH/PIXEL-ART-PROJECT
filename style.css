@@ -1,0 +1,70 @@
+.container {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    overflow-x: hidden;
+}
+
+#grid {
+    --rows: 4;
+    --columns: 4;
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-rows: repeat(var(--rows), 1fr);
+    background-color: #78938A;
+    grid-gap: 4px;
+    padding: 20px;
+    height: 1300px;
+    width: 50%;
+    margin: 130px auto 0;
+
+}
+
+button {
+    padding: 14px;
+}
+
+body {
+    background-color: #525E75;
+}
+
+form {
+    margin: auto;
+}
+
+h1 {
+    margin: 40px auto 0;
+}
+
+input {
+    padding: 14px;
+    width: 10%;
+
+}
+
+@media only screen and (max-width:500px) {
+    #grid {
+        width: 90%;
+        grid-gap: 3px;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    input {
+        width: inherit;
+        margin-bottom: 20px;
+    }
+
+    button {
+        margin-bottom: 20px;
+    }
+}
